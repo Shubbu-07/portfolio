@@ -1,9 +1,9 @@
-import { useRef } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import { Container, Row, Col } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
-import emailjs from '@emailjs/browser';
-import 'animate.css';
+import contactImg from '../assets/img/contact-img.svg';
+// import emailjs from 'emailjs-com';
 
 export const Contact = () => {
   const form = useRef();
@@ -32,7 +32,7 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
               }
             </TrackVisibility>
           </Col>
@@ -40,32 +40,27 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
-                <form ref={form} onSubmit={sendEmail} >
-                  <Row>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" placeholder="First Name" name="first_name" />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" placeholder="Last Name" name="last_name" />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" placeholder="Email Address" name="mail" />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="tel" placeholder="Phone No." name="contact" />
-                    </Col>
-                    <Col size={12} className="px-1">
-                      <textarea rows="6" placeholder="Message" name="message" ></textarea>
-                      <button type="submit"><span>Send</span></button>
-                    </Col>
-                  </Row>
-                </form>
-              </div>}
+                  <h2>Get In Touch</h2>
+                  <form ref={form} onSubmit={sendEmail}>
+                    <Row>
+                      <Col xs={12} md={6}>
+                        <input type="text" name="user_name" placeholder="Your Name" required />
+                      </Col>
+                      <Col xs={12} md={6}>
+                        <input type="email" name="user_email" placeholder="Your Email" required />
+                      </Col>
+                      <Col xs={12}>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                      </Col>
+                    </Row>
+                  </form>
+                </div>
+              }
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
