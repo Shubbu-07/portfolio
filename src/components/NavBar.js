@@ -8,7 +8,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 import logo from '../assets/img/mylogo.png'
 
 const NavBar = () => {
-    const[activeLink, setActiveLink] = useState('home');
+    const[activeLink] = useState('home');  //setActiveLink - Not used yet
     const[scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -25,9 +25,9 @@ const NavBar = () => {
         return () => window.removeEventListener("scroll", onscroll);
     }, [])
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
+    // const onUpdateActiveLink = (value) => {
+    //     setActiveLink(value);
+    // }
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
@@ -39,9 +39,9 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
-            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')} >Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')} >Projects</Nav.Link>
+            <Nav.Link href="#home" style={{color: "#fff"}} className={activeLink === 'home' ? 'active-navbar-link' : 'navbar-link'}  >Home</Nav.Link>
+            <Nav.Link href="#skills" style={{color: "#fff", margin: "6.5px 0 0 0"}} className={activeLink === 'skills' ? 'active-navbar-link' : 'navbar-link'}  >Skills</Nav.Link>
+            <Nav.Link href="#projects" style={{color: "#fff", padding: "0", margin: "6.5px 0 0 0" }} className={activeLink === 'projects' ? 'active-navbar-link' : 'navbar-link'}  >Projects</Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
