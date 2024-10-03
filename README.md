@@ -1,6 +1,5 @@
 Here's an updated `README.md` file tailored for your React-based portfolio website:
 
-```markdown
 # My Portfolio Website
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experiences in web development. Here, you can find information about my work, the technologies I use, and how to get in touch with me.
@@ -41,7 +40,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/portfolio.git
+   git clone https://github.com/Shubbu-07/portfolio.git
    cd portfolio
    ```
 
@@ -66,6 +65,5 @@ Feel free to explore the different sections of my portfolio. You can view my pro
 Contributions are welcome! If you'd like to contribute, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to get started.
 
 Thank you for visiting my portfolio! I hope you find it informative and engaging. If you have any questions or feedback, feel free to reach out!
-```
 
 Feel free to customize any sections further, especially the live demo link and any additional libraries or features you want to highlight. Let me know if you need any changes!
