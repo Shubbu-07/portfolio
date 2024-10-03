@@ -1,5 +1,3 @@
-Here's an updated `README.md` file tailored for your React-based portfolio website:
-
 # My Portfolio Website
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experiences in web development. Here, you can find information about my work, the technologies I use, and how to get in touch with me.
@@ -32,7 +30,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 
 ## Live Demo
 
-You can view my portfolio live at [https://portfolio-shubham-mergu.vercel.app/](#) (replace this with your actual live demo link).
+You can view my portfolio live at [https://portfolio-shubham-mergu.vercel.app/](https://portfolio-shubham-mergu.vercel.app/)
 
 ## Installation
 
