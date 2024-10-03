@@ -39,7 +39,7 @@ Thank you for your interest in contributing to my portfolio website! I appreciat
 7. **Create a Pull Request**:
    - Go to the original repository and click on the "Pull Requests" tab. Then, click on "New Pull Request." Select your branch and submit the pull request.
 
-## Guidelines for Contributions
+## Guidelines for Hacktoberfest Contributions
 
 - **Issue Selection**:
   - Look for issues labeled with `hacktoberfest` or create a new issue for suggestions or enhancements.
